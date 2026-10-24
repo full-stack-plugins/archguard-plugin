@@ -2,7 +2,7 @@
 
 > Rust CLI 与插件桥接完成；缺少 CLI 或契约时返回 PARTIAL。
 
-**Version**: 0.1.0 · **License**: Apache-2.0 · **Skills**: 1
+**Version**: 0.1.1 · **License**: Apache-2.0 · **Skills**: 1
 
 [简体中文](README.md)
 

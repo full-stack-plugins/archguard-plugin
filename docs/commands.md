@@ -1,6 +1,6 @@
 # ArchGuard 命令参考
 
-版本：0.1.0 文档 · 状态：仅 v0.1 PoC check
+版本：0.1.1 文档 · 状态：仅 v0.1 PoC check
 
 ## 命令表
 
