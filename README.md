@@ -22,10 +22,7 @@ ArchGuard 是 Partme Guard 研发防护体系中的独立插件，命令前缀�
 
 ## 安装
 
-~~~bash
-codex plugin marketplace add partme-ai/full-stack-plugins
-codex plugin add archguard-plugin@full-stack-plugins
-~~~
+在 [Full Stack Plugins 市场](https://github.com/partme-ai/full-stack-plugins) 中选择插件 ID `archguard`。仓库名 `archguard-plugin` 与插件 ID 不同。当前固定安装版本为 `v0.1.1`；宿主安装是否自动将 `bin/` 加入 PATH 需按宿主验证。
 
 ## 快速开始
 
@@ -54,7 +51,7 @@ Rust CLI 与插件桥接完成；缺少 CLI 或契约时返回 PARTIAL。
 ## 验证
 
 ~~~bash
-python3 -m pytest -q
+python3 -m unittest discover -s tests -v
 ~~~
 
 ## 许可证

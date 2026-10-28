@@ -22,10 +22,7 @@ ArchGuard is an independent plugin in the Partme Guard family. Its command prefi
 
 ## Installation
 
-~~~bash
-codex plugin marketplace add partme-ai/full-stack-plugins
-codex plugin add archguard-plugin@full-stack-plugins
-~~~
+Select plugin ID `archguard` from the [Full Stack Plugins marketplace](https://github.com/partme-ai/full-stack-plugins). The repository name `archguard-plugin` is not the plugin ID. The installation ref is `v0.1.1`; whether a host exposes `bin/` on PATH requires host-specific verification.
 
 ## Quick Start
 
@@ -54,7 +51,7 @@ See product-docs/ArchGuard/ and docs/ for command lifecycle, read-only checks an
 ## Verification
 
 ~~~bash
-python3 -m pytest -q
+python3 -m unittest discover -s tests -v
 ~~~
 
 ## License

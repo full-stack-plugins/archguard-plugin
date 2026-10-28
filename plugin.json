@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "archguard",
   "version": "0.1.1",
-  "description": "把模块依赖、分层与边界约束变成可执行门禁。",
+  "description": "Architecture boundary guard: extract module dependency facts, validate architecture contracts and emit violation evidence; design-only until the CLI is available.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI",
     "url": "https://github.com/full-stack-plugins"
@@ -14,5 +14,17 @@
     "guard",
     "agent-governance",
     "sdd"
-  ]
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ArchGuard (Architecture Boundary)",
+        "shortDescription": "Module dependencies, layers and boundary contracts",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "composerIconDark": "./assets/logo.png"
+      }
+    }
+  }
 }

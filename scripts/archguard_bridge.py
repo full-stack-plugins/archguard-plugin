@@ -24,7 +24,7 @@ def envelope(command, decision, findings=None, **extra):
 
 def version():
     path = binary()
-    return envelope("version", "allow" if path else "partial", binary=path, pluginVersion="0.1.0")
+    return envelope("version", "allow" if path else "partial", binary=path, pluginVersion=json.loads((ROOT / "plugin.json").read_text())["version"])
 
 
 def doctor(project="."):
